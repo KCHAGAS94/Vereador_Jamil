@@ -42,7 +42,7 @@
     
       </head>
 
-      <body class="">
+      <body class="min-h-screen max-w-full overflow-x-hidden">
         <!-- Cabeçalho fixo -->
         <header class="fixed top-0 left-0 w-full text-white">
             <div class="container mx-auto flex items-center justify-between p-3">
@@ -52,64 +52,74 @@
                         <img src="../img/10000.png" alt="Descrição da Imagem" class="w-16 md:w-32 lg:w-48">
                     </a>
                 </div>
-        
-                <!-- Menu -->
-                <!-- <nav>
-                    <ul class="flex space-x-6">
-                        <li><a href="index.html" class="hover:text-gray-200">Home</a></li>
-                        <li><a href="index copy.html" class="hover:text-gray-200">Sobre</a></li>
-                        <li><a href="#" class="hover:text-gray-200">Serviços</a></li>
-                        <li><a href="#" class="hover:text-gray-200">Contato</a></li>
-                    </ul>
-                </nav> -->
             </div>
         </header>        
-     
-       <div>
-            <img src="../img/event-2.jpg" alt="">
-       </div>
     
+        <!-- Imagem adaptativa -->
+        <div class="w-full">
+            <img src="../img/event-2.jpg" alt="" class="w-full h-auto overflow-hidden">
+        </div>
     
-        <div class="max-w-full overflow-hidden bg-blue-100 p-4">
-            
-            <!-- Inicio quem sou eu -->
-            <div class="">
-                <div class="text-center container mx-auto p-4">
-                    <h1 class="hover:text-amber-400 text-3xl font-bold">Quem sou eu?</h1>
-                </div>
-                <div class="flex items-center just-center">
-                    <!-- Div para o texto (à esquerda) -->
-                    <div class="w-3/4">
-                        <p>texto textomnd  uwjehdbewufwe iuwwgf weiufh ewhfhidslo,feofd,
-                            ,lçds,mflwmflmfldmlfmlfmldsmfkodsmfioknmfiodfmjoikfjiofjweioef
-                            jkjkenjfenijfenwjifnewjiwnfweijnfiujwnfiujiujehfdiuehfdioewhfioe
-                            fjkio0ejroiewjjrfeiwowjfiowejrfioewjrpfojeoprfjpe
-                            jkewndfioewniofneiofneoinfioenfioewjnfiowenjfoinfoijrpojrpo32kr
-                            jdiojedi9wjfioewjhfiuqjheoiji9duiorhrwqiehji3ehji23jhri2hrfi></p>
-                    </div>
-                    <!-- Div para a imagem (à direita) -->
-                    <div class="w-1/4">
-                        <img src="img/10000.png" alt="" class="h-auto rounded-lg">
-                    </div>
+        <!-- Início quem sou eu -->
+        <div class="max-w-full overflow-hidden p-4">
+            <div class="text-center container mx-auto">
+                <h1 class="hover:text-amber-400 text-3xl font-bold">Quem sou eu?</h1>
+            </div>
+            <!-- <div class="flex justify-center p-2">
+                <img src="img/10000.png" alt="" class="h-auto">
+            </div> -->
+            <div class="flex flex-col items-center justify-center">
+                <!-- Div para o texto -->
+                <div class="w-full p-4">
+                    <p class="break-words text-center text-center">texto textomnd  uwjehdbewufwe iuwwgf weiufh ewhfhidslo,feofd,
+                        ,lçds,mflwmflmfldmlfmlfmldsmfkodsmfioknmfiodfmjoikfjiofjweioef
+                        jkjkenjfenijfenwjifnewjiwnfweijnfiujwnfiujiujehfdiuehfdioewhfioe
+                        fjkio0ejroiewjjrfeiwowjfiowejrfioewjrpfojeoprfjpe
+                        jkewndfioewniofneiofneoinfioenfioewjnfiowenjfoinfoijrpojrpo32kr
+                        jdiojedi9wjfioewjhfiuqjheoiji9duiorhrwqiehji3ehji23jhri2hrfi></p>
                 </div>
             </div>
-            <!-- fim quem sou eu -->
+        </div>
+
 
             <!-- Inicio Meu trabalhos voluntários. -->
-            <div class="">
+            <div class="max-w-full overflow-hidden p-4">
                 <div class="text-center container mx-auto p-4">
                     <h1 class="hover:text-amber-400 text-3xl font-bold">Meu trabalhos voluntários?</h1>
                 </div>
-                <div class="flex items-center just-center">
+                <!-- <div class="flex justify-center p-2">
+                    <img src="img/10000.png" alt="" class="h-auto">
+                </div> -->
 
-                     <!-- Div para a imagem (à esquerda) -->
-                     <div class="w-3/4">
-                        <img src="img/10000.png" alt="" class="h-auto rounded-lg">
+                <div class="owl-carousel gallery-carousel max-w-full overflow-hidden p-4">
+                    
+                    <div class=""> <!-- retirei o gallery-item da class -->
+                    <img class="img-fluid w-100" src="img/10000.png" alt="" />
+            
                     </div>
+                    <div class=""> <!-- retirei o gallery-item da class -->
+                    <img class="img-fluid w-100" src="img/10000.png" alt="" />
+            
+                    </div>
+                    <div class=""> <!-- retirei o gallery-item da class -->
+                        <img class="img-fluid w-100" src="img/10000.png" alt="" />
+            
+                    </div>
+                    <div class=""> <!-- retirei o gallery-item da class -->
+                        <img class="img-fluid w-100" src="img/10000.png" alt="" />
+            
+                    </div>
+                    <div class=""> <!-- retirei o gallery-item da class -->
+                        <img class="img-fluid w-100" src="img/10000.png" alt="" />
+            
+                    </div>
+                    
+                </div>
 
-                    <!-- Div para o texto (à direita) -->
-                    <div class="w-3/4 pl-2">
-                        <p>texto textomnd  uwjehdbewufwe iuwwgf weiufh ewhfhidslo,feofd,
+                <div class="flex flex-col items-center justify-center">
+                    <!-- Div para o texto -->
+                    <div class="w-full p-4">
+                        <p class="break-words text-center">texto textomnd  uwjehdbewufwe iuwwgf weiufh ewhfhidslo,feofd,
                             ,lçds,mflwmflmfldmlfmlfmldsmfkodsmfioknmfiodfmjoikfjiofjweioef
                             jkjkenjfenijfenwjifnewjiwnfweijnfiujwnfiujiujehfdiuehfdioewhfioe
                             fjkio0ejroiewjjrfeiwowjfiowejrfioewjrpfojeoprfjpe
@@ -121,13 +131,13 @@
              <!-- fim Meu trabalhos voluntários. -->
 
              <!-- Inicio meus apoaiadores -->
-            <div>
+            <div class="max-w-full overflow-hidden p-4">
                 <div class="text-center container mx-auto p-4">
                     <h1 class="text-3xl font-bold">Meus apoiadores</h1>
                     <p>texto texto</p>
                 </div>
 
-                <div class="owl-carousel gallery-carousel">
+                <div class="owl-carousel gallery-carousel max-w-full overflow-hidden p-4">
                     
                     <div class=""> <!-- retirei o gallery-item da class -->
                     <img class="img-fluid w-100" src="img/10000.png" alt="" />
@@ -156,44 +166,40 @@
              
 
              <!-- Inicio Propostas/capacitação profissional -->
-            <div class="">
-                <div class="text-center container mx-auto p-20">
-                    <h1 class="hover:text-amber-400 text-5xl font-bold">Proposta de governo?</h1> <br>
+            <div class="max-w-full overflow-hidden">
+                <div class="text-center container mx-auto p-10">
+                    <h1 class="hover:text-amber-400 text-4xl font-bold">Proposta de governo?</h1> <br>
                     <h1 class="hover:text-amber-400 text-3xl font-bold">Capacitação de Profissionais?</h1>
                 </div>
-                <div class="flex items-center just-center">
-                    <!-- Div para o texto (à esquerda) -->
-                    <div class="w-3/4">
-                        <p>texto textomnd  uwjehdbewufwe iuwwgf weiufh ewhfhidslo,feofd,
+                <div class="flex justify-center">
+                    <img src="img/10000.png" alt="" class="h-auto">
+                </div>
+                <div class="flex flex-col items-center justify-center">
+                    <!-- Div para o texto -->
+                    <div class="w-full p-4">
+                        <p class="break-words text-center">texto textomnd  uwjehdbewufwe iuwwgf weiufh ewhfhidslo,feofd,
                             ,lçds,mflwmflmfldmlfmlfmldsmfkodsmfioknmfiodfmjoikfjiofjweioef
                             jkjkenjfenijfenwjifnewjiwnfweijnfiujwnfiujiujehfdiuehfdioewhfioe
                             fjkio0ejroiewjjrfeiwowjfiowejrfioewjrpfojeoprfjpe
                             jkewndfioewniofneiofneoinfioenfioewjnfiowenjfoinfoijrpojrpo32kr
                             jdiojedi9wjfioewjhfiuqjheoiji9duiorhrwqiehji3ehji23jhri2hrfi></p>
                     </div>
-                    <!-- Div para a imagem (à direita) -->
-                    <div class="w-1/4">
-                        <img src="img/10000.png" alt="" class="h-auto rounded-lg">
-                    </div>
                 </div>
             </div>
             <!-- fim Propostas/capacitação profissional -->
 
             <!-- Inicio Portal transparente das escolas. -->
-            <div class="">
+            <div class="max-w-full overflow-hidden p-4">
                 <div class="text-center container mx-auto p-4">
                     <h1 class="hover:text-amber-400 text-3xl font-bold">Portal transparente das escolas</h1>
                 </div>
-                <div class="flex items-center just-center">
-
-                     <!-- Div para a imagem (à esquerda) -->
-                     <div class="w-1/4">
-                        <img src="img/10000.png" alt="" class="h-auto rounded-lg">
-                    </div>
-
-                    <!-- Div para o texto (à direita) -->
-                    <div class="w-3/4 pl-2">
-                        <p>texto textomnd  uwjehdbewufwe iuwwgf weiufh ewhfhidslo,feofd,
+                <div class="flex justify-center p-2">
+                    <img src="img/10000.png" alt="" class="h-auto">
+                </div>
+                <div class="flex flex-col items-center justify-center">
+                    <!-- Div para o texto -->
+                    <div class="w-full p-4">
+                        <p class="break-words text-center">texto textomnd  uwjehdbewufwe iuwwgf weiufh ewhfhidslo,feofd,
                             ,lçds,mflwmflmfldmlfmlfmldsmfkodsmfioknmfiodfmjoikfjiofjweioef
                             jkjkenjfenijfenwjifnewjiwnfweijnfiujwnfiujiujehfdiuehfdioewhfioe
                             fjkio0ejroiewjjrfeiwowjfiowejrfioewjrpfojeoprfjpe
@@ -205,43 +211,39 @@
              <!-- fim Portal transparente das escolas -->
 
              <!-- Apoio ao Pequeno Empreendedor-->
-            <div class="">
+            <div class="max-w-full overflow-hidden p-4">
                 <div class="text-center container mx-auto p-4">
                     <h1 class="hover:text-amber-400 text-3xl font-bold">Apoio ao Pequeno Empreendedor</h1>
                 </div>
-                <div class="flex items-center just-center">
-                    <!-- Div para o texto (à esquerda) -->
-                    <div class="w-3/4">
-                        <p>texto textomnd  uwjehdbewufwe iuwwgf weiufh ewhfhidslo,feofd,
+                <div class="flex justify-center p-2">
+                    <img src="img/10000.png" alt="" class="h-auto">
+                </div>
+                <div class="flex flex-col items-center justify-center">
+                    <!-- Div para o texto -->
+                    <div class="w-full p-4">
+                        <p class="break-words text-center">texto textomnd  uwjehdbewufwe iuwwgf weiufh ewhfhidslo,feofd,
                             ,lçds,mflwmflmfldmlfmlfmldsmfkodsmfioknmfiodfmjoikfjiofjweioef
                             jkjkenjfenijfenwjifnewjiwnfweijnfiujwnfiujiujehfdiuehfdioewhfioe
                             fjkio0ejroiewjjrfeiwowjfiowejrfioewjrpfojeoprfjpe
                             jkewndfioewniofneiofneoinfioenfioewjnfiowenjfoinfoijrpojrpo32kr
                             jdiojedi9wjfioewjhfiuqjheoiji9duiorhrwqiehji3ehji23jhri2hrfi></p>
                     </div>
-                    <!-- Div para a imagem (à direita) -->
-                    <div class="w-1/4">
-                        <img src="img/10000.png" alt="" class="h-auto rounded-lg">
-                    </div>
                 </div>
             </div>
             <!-- fim Apoio ao Pequeno Empreendedoru -->
 
             <!-- Inicio Cimitério-->
-            <div class="">
+            <div class="max-w-full overflow-hidden p-4">
                 <div class="text-center container mx-auto p-4">
                     <h1 class="hover:text-amber-400 text-3xl font-bold">Cimitério para gatos e cachorros e pequenos portes</h1>
                 </div>
-                <div class="flex items-center just-center">
-
-                     <!-- Div para a imagem (à esquerda) -->
-                     <div class="w-1/4">
-                        <img src="img/10000.png" alt="" class="h-auto rounded-lg">
-                    </div>
-
-                    <!-- Div para o texto (à direita) -->
-                    <div class="w-3/4 pl-2">
-                        <p>texto textomnd  uwjehdbewufwe iuwwgf weiufh ewhfhidslo,feofd,
+                <div class="flex justify-center p-2">
+                    <img src="img/10000.png" alt="" class="h-auto">
+                </div>
+                <div class="flex flex-col items-center justify-center">
+                    <!-- Div para o texto -->
+                    <div class="w-full p-4">
+                        <p class="break-words text-center">texto textomnd  uwjehdbewufwe iuwwgf weiufh ewhfhidslo,feofd,
                             ,lçds,mflwmflmfldmlfmlfmldsmfkodsmfioknmfiodfmjoikfjiofjweioef
                             jkjkenjfenijfenwjifnewjiwnfweijnfiujwnfiujiujehfdiuehfdioewhfioe
                             fjkio0ejroiewjjrfeiwowjfiowejrfioewjrpfojeoprfjpe
@@ -253,43 +255,39 @@
              <!-- fim Cimitério-->
 
              <!-- Inicio Casa de recuperação -->
-            <div class="">
+            <div class="max-w-full overflow-hidden p-4">
                 <div class="text-center container mx-auto p-4">
                     <h1 class="hover:text-amber-400 text-3xl font-bold">Casa de recuperação e após serviço de free lance</h1>
                 </div>
-                <div class="flex items-center just-center">
-                    <!-- Div para o texto (à esquerda) -->
-                    <div class="w-3/4">
-                        <p>texto textomnd  uwjehdbewufwe iuwwgf weiufh ewhfhidslo,feofd,
+                <div class="flex justify-center p-2">
+                    <img src="img/10000.png" alt="" class="h-auto">
+                </div>
+                <div class="flex flex-col items-center justify-center">
+                    <!-- Div para o texto -->
+                    <div class="w-full p-4">
+                        <p class="break-words text-center">texto textomnd  uwjehdbewufwe iuwwgf weiufh ewhfhidslo,feofd,
                             ,lçds,mflwmflmfldmlfmlfmldsmfkodsmfioknmfiodfmjoikfjiofjweioef
                             jkjkenjfenijfenwjifnewjiwnfweijnfiujwnfiujiujehfdiuehfdioewhfioe
                             fjkio0ejroiewjjrfeiwowjfiowejrfioewjrpfojeoprfjpe
                             jkewndfioewniofneiofneoinfioenfioewjnfiowenjfoinfoijrpojrpo32kr
                             jdiojedi9wjfioewjhfiuqjheoiji9duiorhrwqiehji3ehji23jhri2hrfi></p>
                     </div>
-                    <!-- Div para a imagem (à direita) -->
-                    <div class="w-1/4">
-                        <img src="img/10000.png" alt="" class="h-auto rounded-lg">
-                    </div>
                 </div>
             </div>
             <!-- fim Casa de recuperação-->
 
             <!-- Inicio Restaurante popular -->
-            <div class="">
+            <div class="max-w-full overflow-hidden p-4">
                 <div class="text-center container mx-auto p-4">
                     <h1 class="hover:text-amber-400 text-3xl font-bold">Restaurante popular</h1>
                 </div>
-                <div class="flex items-center just-center">
-
-                     <!-- Div para a imagem (à esquerda) -->
-                     <div class="w-1/4">
-                        <img src="img/10000.png" alt="" class="h-auto rounded-lg">
-                    </div>
-
-                    <!-- Div para o texto (à direita) -->
-                    <div class="w-3/4 pl-2">
-                        <p>texto textomnd  uwjehdbewufwe iuwwgf weiufh ewhfhidslo,feofd,
+                <div class="flex justify-center p-2">
+                    <img src="img/10000.png" alt="" class="h-auto">
+                </div>
+                <div class="flex flex-col items-center justify-center">
+                    <!-- Div para o texto -->
+                    <div class="w-full p-4">
+                        <p class="break-words text-center">texto textomnd  uwjehdbewufwe iuwwgf weiufh ewhfhidslo,feofd,
                             ,lçds,mflwmflmfldmlfmlfmldsmfkodsmfioknmfiodfmjoikfjiofjweioef
                             jkjkenjfenijfenwjifnewjiwnfweijnfiujwnfiujiujehfdiuehfdioewhfioe
                             fjkio0ejroiewjjrfeiwowjfiowejrfioewjrpfojeoprfjpe
