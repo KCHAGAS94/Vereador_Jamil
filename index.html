@@ -44,28 +44,43 @@
 
       <body class="min-h-screen max-w-full overflow-x-hidden">
 
-        <div class="fixed bottom-4 right-4">
+        <div class="fixed bottom-4 right-4 z-50">
             <a href="https://w.app/10milenumerodojamil">
                 <img src="img/logo-whatsapp.png" alt="WhatsApp Logo" class="w-12 h-12">
             </a>
         </div>
 
         <!-- Cabeçalho fixo -->
-        <header class="fixed top-0 left-0 w-full text-white">
+        <header class="fixed top-0 left-0 w-full text-white z-50">
             <div class="container mx-auto flex items-center justify-between p-3">
                 <!-- Logo -->
                 <div class="text-2xl font-bold">
                     <a class="navbar-brand" href="index.html">
-                        <img src="../img/10000 (1).png" alt="Descrição da Imagem" class="w-16 md:w-32 lg:w-48">
+                        <img src="../img/10000 (1).png" alt="Descrição da Imagem" class="w-96">
                     </a>
                 </div>
             </div>
         </header>        
     
         <!-- Imagem adaptativa -->
-        <div class="w-full">
+        <div class="relative w-full">
+            <!-- Texto em cima -->
+            <p class="absolute top-1/2 left-0 w-full text-center text-white p-4 font-bold text-1xl md:bottom-100 md:text-2xl lg:text-3xl transform -translate-y-1/2">
+                "Jamil, o trabalhador que sempre esteve ao lado do povo,
+                candidato a vereador para fazer mais pela nossa cidade."
+            </p>
+        
+            <!-- Imagem -->
             <img src="../img/event-2.jpg" alt="" class="w-full h-auto overflow-hidden">
+            
+            <!-- Texto em baixo -->
+            <p class="absolute bottom-1 left-0 w-full text-center text-blue-400 p-4 font-bold text-xl md:bottom-20 md:text-3xl lg:text-5xl">
+                Vote 10 mil, é o número do Jamil
+            </p>
         </div>
+        
+        
+        
     
         <!-- Início quem sou eu -->
         <div class="max-w-full overflow-hidden p-4">
@@ -78,7 +93,7 @@
             <div class="flex flex-col items-center justify-center">
                 <!-- Div para o texto -->
                 <div class="w-full p-4">
-                    <p class="break-words text-center text-center">texto textomnd  uwjehdbewufwe iuwwgf weiufh ewhfhidslo,feofd,
+                    <p class="break-words text-center text-center text-black">texto textomnd  uwjehdbewufwe iuwwgf weiufh ewhfhidslo,feofd,
                         ,lçds,mflwmflmfldmlfmlfmldsmfkodsmfioknmfiodfmjoikfjiofjweioef
                         jkjkenjfenijfenwjifnewjiwnfweijnfiujwnfiujiujehfdiuehfdioewhfioe
                         fjkio0ejroiewjjrfeiwowjfiowejrfioewjrpfojeoprfjpe
@@ -101,32 +116,32 @@
                 <div class="owl-carousel gallery-carousel max-w-full overflow-hidden p-4">
                     
                     <div class=""> 
-                    <img class="img-fluid w-100" src="img/10000.png" alt="" />
+                    <img class="img-fluid w-100" src="img/Trabalho Voluntário/Juiz.jpg" alt="" />
             
                     </div>
                     <div class=""> 
-                    <img class="img-fluid w-100" src="img/10000.png" alt="" />
+                    <img class="img-fluid w-100" src="img/Trabalho Voluntário/fanfarra 1.jpg" alt="" />
             
                     </div>
                     <div class=""> 
+                        <img class="img-fluid w-100" src="img/Trabalho Voluntário/fanfarra 2.jpg" alt="" />
+            
+                    </div>
+                    <div class=""> 
+                        <img class="img-fluid w-100" src="img/Trabalho Voluntário/fanfarra 3.jpg" alt="" />
+            
+                    </div>
+                    <!-- <div class=""> 
                         <img class="img-fluid w-100" src="img/10000.png" alt="" />
             
-                    </div>
-                    <div class=""> 
-                        <img class="img-fluid w-100" src="img/10000.png" alt="" />
-            
-                    </div>
-                    <div class=""> 
-                        <img class="img-fluid w-100" src="img/10000.png" alt="" />
-            
-                    </div>
+                    </div> -->
                     
                 </div>
 
                 <div class="flex flex-col items-center justify-center">
                     <!-- Div para o texto -->
                     <div class="w-full p-4">
-                        <ul class="break-words list-disc list-inside text-center">
+                        <ul class="break-words list-disc list-inside text-center font-bold text-black">
                             <li>Estou a 25 anos como regente na fanfarra na E.E.DR. Delfim Moreira (Grupão)</li>
                             <li>Participei como marcador de festa junina nos bairros</li>
                             <li>Já fui árbitro de futebol, inicialmente sem lucro, apenas por amor ao futebol.</li>
@@ -147,15 +162,15 @@
                 <div class="owl-carousel gallery-carousel max-w-full overflow-hidden p-4">
                     <!-- imagem deve ser tamanho 3/4 -->
                     <div class=""> 
-                    <img class="img-fluid w-100" src="img/pastor flavio.jpg" alt="" /> <!-- imagem deve ser tamanho 3/4 -->
+                    <img class="img-fluid w-100" src="img/Apoiadores/pastor flavio.jpg" alt="" /> <!-- imagem deve ser tamanho 3/4 -->
                         <p class="text-center font-bold text-blue-400">Pastor Flávio</p>
                     </div>
                     <div class=""> 
-                    <img class="img-fluid w-100" src="img/cleitinho.jpg" alt="" /> <!-- imagem deve ser tamanho 3/4 -->
+                    <img class="img-fluid w-100" src="img/Apoiadores/cleitinho.jpg" alt="" /> <!-- imagem deve ser tamanho 3/4 -->
                         <p class="text-center font-bold text-blue-400">Senador Cleitinho</p>
                     </div>
                     <div class=""> 
-                        <img class="img-fluid w-100" src="img/Pastor Jonathas.jpg" alt="" /> <!-- imagem deve ser tamanho 3/4 -->
+                        <img class="img-fluid w-100" src="img/Apoiadores/Pastor Jonathas.jpg" alt="" /> <!-- imagem deve ser tamanho 3/4 -->
                             <p class="text-center font-bold text-blue-400">Pastor Jônathas</p>
                     </div>
                     
@@ -177,7 +192,7 @@
                 <div class="flex flex-col items-center justify-center">
                     <!-- Div para o texto -->
                     <div class="w-full p-4">
-                        <p class="break-words text-center">
+                        <p class="break-words text-center text-black">
                             Estabelecer parcerias com instituições de ensino e empresas para oferecer 
                             cursos de capacitação e especialização para a população local total gratuito com certificado. </p>
                         <p class="break-words text-center font-bold text-black">Objetivo: Aumentar a qualificação profissional e a empregabilidade dos cidadãos.</p>
@@ -197,7 +212,7 @@
                 <div class="flex flex-col items-center justify-center">
                     <!-- Div para o texto -->
                     <div class="w-full p-4">
-                        <p class="break-words text-center">
+                        <p class="break-words text-center text-black">
                             Criar um centro de apoio ao empreendedorismo local, oferecendo orientação, 
                             treinamento e acesso a recursos para pequenos empresários e novos empreendedores.</p>
                         <p class="break-words text-center font-bold text-black">Objetivo: Aumentar a qualificação profissional e a empregabilidade dos cidadãos.</p>
@@ -217,7 +232,7 @@
                 <div class="flex flex-col items-center justify-center">
                     <!-- Div para o texto -->
                     <div class="w-full p-4">
-                        <p class="break-words text-center">
+                        <p class="break-words text-center text-black">
                             Criar um centro de apoio ao empreendedorismo local, oferecendo orientação, 
                             treinamento e acesso a recursos para pequenos empresários e novos empreendedores. </p>
                         <p class="break-words text-center font-bold text-black">Objetivo: Fomentar o desenvolvimento de negócios locais e aumentar as oportunidades de emprego na cidade.</p>
@@ -237,7 +252,7 @@
                 <div class="flex flex-col items-center justify-center">
                     <!-- Div para o texto -->
                     <div class="w-full p-4">
-                        <p class="break-words text-center">
+                        <p class="break-words text-center text-black">
                             O projeto visa criar um cemitério dedicado para gatos, cachorros e pequenos 
                             animais de estimação, oferecendo um local digno e respeitoso para a sepultura e lembrança desses animais amados. </p>
                         <p class="break-words text-center font-bold text-black">Objetivo: Aumentar a qualificação profissional e a empregabilidade dos cidadãos.</p>
@@ -257,7 +272,7 @@
                 <div class="flex flex-col items-center justify-center">
                     <!-- Div para o texto -->
                     <div class="w-full p-4">
-                        <p class="break-words text-center">
+                        <p class="break-words text-center text-black">
                             Estabelecer parcerias com instituições de ensino e empresas para oferecer 
                             cursos de capacitação e especialização para a população local total gratuito com certificado. </p>
                         <p class="break-words text-center font-bold text-black">Objetivo: Aumentar a qualificação profissional e a empregabilidade dos cidadãos.</p>
@@ -277,7 +292,7 @@
                 <div class="flex flex-col items-center justify-center">
                     <!-- Div para o texto -->
                     <div class="w-full p-4">
-                        <p class="break-words text-center">
+                        <p class="break-words text-center text-black">
                             Estabelecer parcerias com instituições de ensino e empresas para oferecer 
                             cursos de capacitação e especialização para a população local total gratuito com certificado. </p>
                         <p class="break-words text-center font-bold text-black text-black">Objetivo: Aumentar a qualificação profissional e a empregabilidade dos cidadãos.</p>
