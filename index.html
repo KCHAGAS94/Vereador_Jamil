@@ -195,16 +195,25 @@
                 </div> -->
                 <div class="flex flex-col items-center justify-center">
                     <!-- Div para o texto -->
-                    <div class="w-full">
+                    <div class="w-full pb-6">
+                        <!-- Texto 1 -->
                         <p class="break-words text-center text-black">
                             O Projeto Capacitação de Profissionais é uma iniciativa que busca estabelecer parcerias 
                             com instituições de ensino e empresas para proporcionar cursos de capacitação e especialização. 
                             Essas oportunidades serão oferecidas gratuitamente à população local, com a vantagem adicional de 
                             receber um certificado de conclusão.
                         </p>
-                        
-                        <p class="break-words text-center font-bold text-blue-400 text-2xl pt-8">
-                            Benefícios do Projeto</p>
+                    
+                        <!-- Botão "Saiba Mais" -->
+                        <div class="text-center mt-4">
+                            <button id="toggleButton" class="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-700 focus:outline-none">
+                                Saiba Mais
+                            </button>
+                        </div>
+                    
+                        <!-- Texto 2 (oculto por padrão) -->
+                        <div id="moreText" class="mt-4 hidden">
+                            <p class="break-words text-center font-bold text-blue-400 text-2xl pt-8">Benefícios do Projeto</p>
                             <p class="flex items-center justify-center text-black font-bold pt-2">Para Educadores e Palestrantes:</p>
                             <ul class="break-words list-disc list-inside text-center text-black">
                                 <li>Certificação: Ganharão certificados sobre os temas abordados, que podem ser um diferencial em candidaturas a concursos públicos e oportunidades de trabalho.</li>
@@ -221,6 +230,7 @@
                                 <li>Profissionais Preparados: Contarão com um pool de profissionais mais capacitados, prontos para enfrentar os desafios do dia a dia com maior competência e eficiência.</li>
                                 <li>Fortalecimento de Parcerias: Beneficiarão de uma rede de colaboração com instituições educacionais e outras empresas, promovendo um ambiente de crescimento e aprendizado contínuo.</li>
                             </ul>
+                        </div>
                             
                     </div>
                 </div>
@@ -237,26 +247,38 @@
                 </div>
                 <div class="flex flex-col items-center justify-center">
                     <!-- Div para o texto -->
-                    <div class="w-full p-4">
+                    <div class="w-full pb-6">
+                        <!-- Texto 1 -->
                         <p class="break-words text-center text-black">
                             Este projeto visa criar uma plataforma digital acessível a todos os cidadãos, 
                             permitindo que qualquer pessoa possa consultar informações detalhadas sobre o 
-                            estado das escolas municipais. Através do portal, a população poderá verificar:</p>
-                            <ul class="break-words list-disc list-inside text-center font-bold text-black">
-                                <li>Capacidade das Escolas: Informações atualizadas sobre o número total de vagas disponíveis em cada instituição de ensino.</li>
-                                <li>Dados dos Estudantes: Transparência sobre quem está matriculado, garantindo uma visão clara sobre a ocupação das vagas e possibilitando o acompanhamento do fluxo escolar.</li>
-                                <li>Estado das Infraestruturas: Relatórios sobre as condições das instalações, recursos disponíveis e necessidades de melhorias.</li>
-                            </ul>
-                        <p class="break-words text-center font-bold text-blue-400 text-2xl pt-8">
-                            Objetivos do Projeto</p>
+                            estado das escolas municipais. Através do portal, a população poderá verificar:
+                        </p>
+                        <ul class="break-words list-disc list-inside text-center font-bold text-black">
+                            <li>Capacidade das Escolas: Informações atualizadas sobre o número total de vagas disponíveis em cada instituição de ensino.</li>
+                            <li>Dados dos Estudantes: Transparência sobre quem está matriculado, garantindo uma visão clara sobre a ocupação das vagas e possibilitando o acompanhamento do fluxo escolar.</li>
+                            <li>Estado das Infraestruturas: Relatórios sobre as condições das instalações, recursos disponíveis e necessidades de melhorias.</li>
+                        </ul>
+                    
+                        <!-- Botão "Saiba Mais" -->
+                        <div class="text-center mt-4">
+                            <button id="toggleButton" class="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-700 focus:outline-none">
+                                Saiba Mais
+                            </button>
+                        </div>
+                    
+                        <!-- Texto 2 (oculto por padrão) -->
+                        <div id="moreText" class="mt-4 hidden">
+                            <p class="break-words text-center font-bold text-blue-400 text-2xl pt-8">
+                                Objetivos do Projeto
+                            </p>
                             <ul class="break-words list-disc list-inside text-center text-black">
                                 <li>Garantir Igualdade de Oportunidades: Eliminar a dependência de favorecimentos políticos para conseguir uma vaga escolar para os filhos. Com informações claras e acessíveis, todos terão as mesmas oportunidades para matricular seus filhos nas escolas de sua escolha.</li>
                                 <li>Fomentar a Transparência: Promover a confiança entre a administração pública e a população, fornecendo dados abertos e atualizados sobre o sistema educacional.</li>
                                 <li>Facilitar o Planejamento: Permitir que pais e responsáveis planejem melhor a educação dos seus filhos com base em informações precisas e em tempo real.</li>
                                 <li>Promover a Melhoria Contínua: Identificar áreas que precisam de atenção e promover ações para a melhoria das infraestruturas escolares com base em dados concretos.</li>
-
                             </ul>
-                    </div>
+                        </div>
                 </div>
             </div>
              <!-- fim Portal transparente das escolas -->
@@ -387,6 +409,17 @@
             }
           });
         });
+
+        document.getElementById('toggleButton').addEventListener('click', function() {
+        const moreText = document.getElementById('moreText');
+        if (moreText.classList.contains('hidden')) {
+            moreText.classList.remove('hidden');
+            this.textContent = 'Mostrar Menos';
+        } else {
+            moreText.classList.add('hidden');
+            this.textContent = 'Saiba Mais';
+        }
+    });
         </script>
 
         
