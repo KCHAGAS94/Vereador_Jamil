@@ -187,7 +187,7 @@
              <!-- Inicio Propostas/capacitação profissional -->
             <div class="max-w-full overflow-hidden bg-blue-50">
                 <div class="text-center container mx-auto pt-8">
-                    <h1 class="hover:text-amber-400 text-4xl font-bold">Minhas Proposta de governo</h1> <br>
+                    <h1 class="hover:text-amber-400 text-4xl font-bold">Minhas Propostas de governo:</h1> <br>
                     <h1 class="hover:text-amber-400 text-3xl font-bold">Capacitação de Profissionais</h1>
                 </div>
                 <!-- <div class="flex justify-center">
@@ -206,13 +206,13 @@
                     
                         <!-- Botão "Saiba Mais" -->
                         <div class="text-center mt-4">
-                            <button id="toggleButton" class="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-700 focus:outline-none">
+                            <button class="toggleButton bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-700 focus:outline-none">
                                 Saiba Mais
                             </button>
                         </div>
                     
                         <!-- Texto 2 (oculto por padrão) -->
-                        <div id="moreText" class="mt-4 hidden">
+                        <div class="moreText mt-4 hidden">
                             <p class="break-words text-center font-bold text-blue-400 text-2xl pt-8">Benefícios do Projeto</p>
                             <p class="flex items-center justify-center text-black font-bold pt-2">Para Educadores e Palestrantes:</p>
                             <ul class="break-words list-disc list-inside text-center text-black">
@@ -231,6 +231,7 @@
                                 <li>Fortalecimento de Parcerias: Beneficiarão de uma rede de colaboração com instituições educacionais e outras empresas, promovendo um ambiente de crescimento e aprendizado contínuo.</li>
                             </ul>
                         </div>
+                    
                             
                     </div>
                 </div>
@@ -262,13 +263,13 @@
                     
                         <!-- Botão "Saiba Mais" -->
                         <div class="text-center mt-4">
-                            <button id="toggleButton" class="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-700 focus:outline-none">
+                            <button class="toggleButton bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-700 focus:outline-none">
                                 Saiba Mais
                             </button>
                         </div>
                     
                         <!-- Texto 2 (oculto por padrão) -->
-                        <div id="moreText" class="mt-4 hidden">
+                        <div class="moreText mt-4 hidden">
                             <p class="break-words text-center font-bold text-blue-400 text-2xl pt-8">
                                 Objetivos do Projeto
                             </p>
@@ -410,16 +411,18 @@
           });
         });
 
-        document.getElementById('toggleButton').addEventListener('click', function() {
-        const moreText = document.getElementById('moreText');
-        if (moreText.classList.contains('hidden')) {
-            moreText.classList.remove('hidden');
-            this.textContent = 'Mostrar Menos';
-        } else {
-            moreText.classList.add('hidden');
-            this.textContent = 'Saiba Mais';
-        }
-    });
+            document.querySelectorAll('.toggleButton').forEach(button => {
+            button.addEventListener('click', function() {
+                const moreText = this.parentElement.nextElementSibling;
+                if (moreText.classList.contains('hidden')) {
+                    moreText.classList.remove('hidden');
+                    this.textContent = 'Mostrar Menos';
+                } else {
+                    moreText.classList.add('hidden');
+                    this.textContent = 'Saiba Mais';
+                }
+            });
+        });
         </script>
 
         
