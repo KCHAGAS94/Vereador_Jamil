@@ -10180,3 +10180,19 @@ a.text-dark:focus {
     border-right: none !important;
   }
 }
+
+.animation-marquee {
+  display: inline-flex;
+  white-space: nowrap;
+  animation: marquee 12s linear infinite;
+  padding-left: 0%; /* Ajuste para controlar o espaço inicial */
+}
+
+@keyframes marquee {
+  0% {
+      transform: translateX(0);
+  }
+  100% {
+      transform: translateX(-50%);
+  }
+}
