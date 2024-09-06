@@ -10185,7 +10185,7 @@ a.text-dark:focus {
 .animation-marquee {
   display: inline-flex;
   white-space: nowrap;
-  animation: marquee 12s linear infinite;
+  animation: marquee 15s linear infinite;
   padding-left: 0%; /* Ajuste para controlar o espaço inicial */
 }
 
